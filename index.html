@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart with Promo Code</title>
+  <style>
+    #checkout { font-family: Arial, sans-serif; }
+    #promoMessage { color: red; }
+  </style>
+</head>
+<body>
+
+  <div id="checkout">
+    <h2>Checkout</h2>
+    <div>
+      <label for="promoCode">Enter Promo Code:</label>
+      <input type="text" id="promoCode" placeholder="Enter Promo Code" />
+      <button id="applyPromoBtn">Apply</button>
+    </div>
+    
+    <div id="promoMessage"></div>
+
+    <h3>Cart Summary</h3>
+    <p>Subtotal: $<span id="subtotal">100.00</span></p>
+    <p>Discount: $<span id="discount">0.00</span></p>
+    <p>Total: $<span id="total">100.00</span></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
